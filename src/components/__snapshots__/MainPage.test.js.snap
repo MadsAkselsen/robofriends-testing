@@ -15,3 +15,17 @@ exports[`renders without crashing 1`] = `
   </Scroll>
 </div>
 `;
+
+exports[`should show loading message when pending 1`] = `
+<div
+  className="tc"
+>
+  <Header />
+  <SearchBox />
+  <Scroll>
+    <h1>
+      Loading
+    </h1>
+  </Scroll>
+</div>
+`;

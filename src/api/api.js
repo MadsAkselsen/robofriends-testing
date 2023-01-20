@@ -1,2 +1,8 @@
+import axios from "axios";
+
 export const apiCall = (link) =>
-  fetch(link).then(response => response.json())
+	axios.get(link).then((response) => {
+		console.log("resp", response.data);
+		// return response.json();
+		return response.data;
+	});
